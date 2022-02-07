@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping hand</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Detection</title>
+    <link rel="stylesheet" href={{url_for('static',filename='more_bc.css')}}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <section>
+        <h1>   
+             <div>
+            <center> {{ prediction_text}} </center>
+            </div>
+        </h1>
+    
+    </section>
+    <section id="prediction-form">
+        <form class="form" action="/more", method="POST">
+            <h1>INFO</h1>
+            <div class="row">
+
+    <section>
+        <div>
+            <li>
+                <h2>
+                What is breast cancer?
+                </h2>
+            </li>
+            <p>Breast cancer is a type of cancer that starts in the breast. It can start in one or both breasts.</p>
+            <p>Cancer starts when cells begin to grow out of control. (To learn more about how cancers start and spread)</p>
+            <p>Breast cancer occurs almost entirely in women, but men can get breast cancer, too.</p>
+            <p><strong>It's important to understand that most breast lumps are benign and not cancer (malignant).</strong> 
+            Non-cancer breast tumors are abnormal growths, but they do not spread outside of the breast. 
+            They are not life threatening, but some types of benign breast lumps can increase a woman's 
+            risk of getting breast cancer. Any breast lump or change needs to be checked by a health care 
+            professional to find out if it is benign or malignant (cancer) and if it might affect yours future 
+            cancer risk.</p>
+            <h2>Where breast cancer starts?</h2>
+            <p>Breast cancers can start from different parts of the breast. The breast is an organ that sits on 
+                top of the upper ribs and chest muscles. There is a left and right breast and each one has mainly 
+                glands, ducts, and fatty tissue. In women, the breast makes and delivers milk to feed newborns and infants. 
+                The amount of fatty tissue in the breast determines the size of each breast.</p>
+            <p>The breast has different parts:</p>
+                <li>- <strong>Lobules</strong> are the glands that make breast milk. Cancers that start here are called <strong>lobular cancers.</strong></li>
+                <li>- <strong>Ducts</strong> are small canals that come out from the lobules and carry the milk to the nipple. 
+                This is the most common place for breast cancer to start. Cancers that start here are called <strong>ductal cancers</strong>.</li>
+                <li>- The <strong>nipple</strong> is the opening in the skin of the breast where the ducts come together and turn into larger ducts 
+                so the milk can leave the breast. The nipple is surrounded by slightly darker thicker skin called the <strong>areola</strong>. 
+                A less common type of breast cancer called Paget disease of the breast can start in the nipple.</li>
+                <li>- The <strong>fat and connective tissue (stroma)</strong> surround the ducts and lobules and help keep them in place. 
+                A less common type of breast cancer called phyllodes tumor can start in the stroma.</li>
+                <li>- <strong>Blood vessels</strong> and <strong>lymph vessels</strong> are also found in each breast. 
+                Angiosarcoma is a less common type of breast cancer that can start in the lining of these vessels. The lymph system is described below. </li>
+            <p>A small number of cancers start in other tissues in the breast. These cancers are called sarcomas and lymphomas and are not really thought of as breast cancers.</p>
+        </div>
+
+        <img src="https://www.cancer.org/content/dam/cancer-org/images/illustrations/medical-illustrations/en/breast-cancer-images/normal-breast-tissue.gif/jcr:content/renditions/cq5dam.thumbnail.980.980.jpeg"/>
+
+        
+            <p>
+                <h2>Symptoms:</h2>
+                <ul><li>New lump in the breast or underarm (armpit).</li>
+                <li>Thickening or swelling of part of the breast.</li>
+                <li>Irritation or dimpling of breast skin.</li>
+                <li>Redness or flaky skin in the nipple area or the breast.</li>
+                <li>Pulling in of the nipple or pain in the nipple area.</li>
+                <li>Nipple discharge other than breast milk, including blood.</li>
+                <li>Any change in the size or the shape of the breast.</li>
+                <li>Pain in any area of the breast.</li>
+                <li>A breast lump or thickening that feels different from the surrounding tissue</li>
+                <li>Change in the size, shape or appearance of a breast</li>
+                <li>Changes to the skin over the breast, such as dimpling</li>
+                <li>A newly inverted nipple</li>
+                <li>Peeling, scaling, crusting or flaking of the pigmented area of skin surrounding the nipple (areola) or breast skin</li>
+                <li>Redness or pitting of the skin over your breast, like the skin of an orange</li>
+                </ul>
+            </p>
+
+        <div>
+            <p>
+                <p><h2>How breast cancer spreads?</h2></p>
+                <p>Breast cancer can spread when the cancer cells get into the blood or lymph system and then are carried to other parts of the body. </p>
+                <p>The lymph (or lymphatic) system is a part of your body's immune system. It is a network of lymph nodes (small, bean-sized glands), 
+                    ducts or vessels, and organs that work together to collect and carry clear lymph fluid through the body tissues to the blood. 
+                    The clear lymph fluid inside the lymph vessels contains tissue by-products and waste material, as well as immune system cells. </p>
+                <p><span>The lymph vessels carry lymph fluid away from the breast. In the case of breast cancer, cancer cells can enter those lymph vessels 
+                    and start to grow in lymph nodes. Most of the lymph vessels of the breast drain into:</span></p>
+                <ul><li>Lymph nodes under the arm (<strong>axillary</strong> lymph nodes)</li>
+                <li>Lymph nodes inside the chest near the breastbone (<strong>internal mammary</strong> lymph nodes)</li>
+                <li>Lymph nodes around the collar bone (<strong>supraclavicular</strong> [above the collar bone] and <strong>infraclavicular</strong> 
+                    [below the collar bone] lymph nodes)</li></ul>
+            </p>
+            <p>If cancer cells have spread to your lymph nodes, there is a higher chance that the cells could have traveled through the lymph system and spread 
+                (metastasized) to other parts of your body. Still, not all women with cancer cells in their lymph nodes develop metastases, and some women with no 
+                cancer cells in their lymph nodes might develop metastases later.</p>
+        </div>
+
+        <img src="https://www.cancer.org/content/dam/cancer-org/images/illustrations/medical-illustrations/en/breast-cancer-images/lymph-nodes-in-relation-to-breast.gif/jcr:content/renditions/cq5dam.thumbnail.980.980.jpeg">
+
+        <div>
+            <h2>Types of breast cancer</h2>
+            <p>There are many different types of breast cancer. The type is determined by the specific kind of cells in the breast that are affected. 
+                Most breast cancers are <strong>carcinomas</strong>. The most common breast cancers such as ductal carcinoma in situ (DCIS) and invasive carcinoma are 
+                <strong>adenocarcinomas</strong>, since the cancers start in the gland cells in the milk ducts or the lobules (milk-producing glands). Other kinds of cancers can grow 
+                in the breast, like angiosarcoma or sarcoma, but are not considered breast cancer since they start in different cells of the breast.</p>
+        </div>
+
+        <div>
+            <h2>Causes</h2>
+            <p>It's not clear what causes most angiosarcomas, though doctors have identified factors that may increase your risk of the disease.</p>
+            <p>Doctors know that something happens that causes a cell in the lining of a blood vessel or lymph vessel to develop an error (mutation) in its genetic code. 
+                The mutation tells the cell to grow quickly, making more abnormal cells. The abnormal cells continue living when other cells would die.</p>
+            <p>The result is a buildup of abnormal cells that grows from the affected blood vessel or lymph vessel. With time, cells may break off and spread 
+                (metastasize) to other areas of the body.</p>
+
+            <h3>Inherited breast cancer</h3>
+            <p>Doctors estimate that about 5 to 10 percent of breast cancers are linked to gene mutations passed through generations of a family.</p>
+            <p>A number of inherited mutated genes that can increase the likelihood of breast cancer have been identified. 
+                The most well-known are breast cancer gene 1 (BRCA1) and breast cancer gene 2 (BRCA2), 
+                both of which significantly increase the risk of both breast and ovarian cancer.</p>
+            <p>Consider asking your doctor for a referral to a genetic counselor, who can review your family health history. 
+                A genetic counselor can also discuss the benefits, risks and limitations of genetic testing to assist you with shared decision-making.</p>
+            
+        </div>
+
+        <div>
+            <h2>Risk factors</h2>
+            <p>A breast cancer risk factor is anything that makes it more likely you'll get breast cancer. 
+                But having one or even several breast cancer risk factors doesn't necessarily mean you'll develop breast cancer. 
+                Many women who develop breast cancer have no known risk factors other than simply being women.</p>
+            <p>Factors that are associated with an increased risk of breast cancer include:</p>
+            <ul>
+                <li><strong>Being female.</strong> Women are much more likely than men are to develop breast cancer.</li>
+                <li><strong>Increasing age.</strong> Your risk of breast cancer increases as you age.</li>
+                <li><strong>A personal history of breast conditions.</strong> If you've had a breast biopsy that found lobular carcinoma in 
+                    situ (LCIS) or atypical hyperplasia of the breast, you have an increased risk of breast cancer.</li>
+                <li><strong>A personal history of breast cancer.</strong> If you've had breast cancer in one breast, you have an 
+                    increased risk of developing cancer in the other breast.</li>
+                <li><strong>A family history of breast cancer.</strong> If your mother, sister or daughter was diagnosed with breast cancer, 
+                    particularly at a young age, your risk of breast cancer is increased. Still, the majority of people diagnosed 
+                    with breast cancer have no family history of the disease.</li>
+                <li><strong>Inherited genes that increase cancer risk.</strong> Certain gene mutations that increase the risk of breast cancer can be 
+                    passed from parents to children. The most well-known gene mutations are referred to as BRCA1 and BRCA2. 
+                    These genes can greatly increase your risk of breast cancer and other cancers, but they don't make cancer inevitable.</li>
+                <li><strong>Radiation exposure.</strong> If you received radiation treatments to your chest as a child or young adult, 
+                    your risk of breast cancer is increased.</li>
+                <li><strong>Obesity.</strong> Being obese increases your risk of breast cancer.</li>
+                <li><strong>Beginning your period at a younger age.</strong> Beginning your period before age 12 increases your risk of breast cancer.</li>
+                <li><strong>Beginning menopause at an older age.</strong> If you began menopause at an older age, you're more likely to develop breast cancer.</li>
+                <li><strong>Having your first child at an older age.</strong> Women who give birth to their first child after age 30 may have an increased risk of 
+                    breast cancer.</li>
+                <li><strong>Having never been pregnant.</strong> Women who have never been pregnant have a greater risk of breast cancer than do women who have had one or more pregnancies.</li>
+                <li><strong>Postmenopausal hormone therapy.</strong> Women who take hormone therapy medications that combine estrogen and progesterone to treat the signs 
+                    and symptoms of menopause have an increased risk of breast cancer. The risk of breast cancer decreases when women stop taking these medications.</li>
+                <li><strong>Drinking alcohol.</strong> Drinking alcohol increases the risk of breast cancer.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2><strong>Prevention</strong></h2>
+            <h3>Breast cancer risk reduction for women with an average risk</h3>
+            <li>Making changes in your daily life may help reduce your risk of breast cancer. Try to:</li>
+            <ul>
+                <li><strong>Ask your doctor about breast cancer screening.</strong> Discuss with your doctor when to begin breast cancer screening exams and tests, 
+                    such as clinical breast exams and mammograms. Talk to your doctor about the benefits and risks of screening. 
+                    Together, you can decide what breast cancer screening strategies are right for you.</li>
+                <li><p><strong>Become familiar with your breasts through breast self-exam for breast awareness.</strong> 
+                    Women may choose to become familiar with their breasts by occasionally inspecting their breasts 
+                    during a breast self-exam for breast awareness. If there is a new change, lumps or other unusual signs 
+                    in your breasts, talk to your doctor promptly.</p>
+                    <p>Breast awareness can't prevent breast cancer, but it may help you to better understand the normal 
+                        changes that your breasts undergo and identify any unusual signs and symptoms.</p></li>
+                <li><strong>Drink alcohol in moderation, if at all.</strong> Limit the amount of alcohol you drink to no more than one drink a day, 
+                    if you choose to drink.</li>
+                <li><strong>Exercise most days of the week.</strong> Aim for at least 30 minutes of exercise on most days of the week. 
+                    If you haven't been active lately, ask your doctor whether it's OK and start slowly.</li>
+                <li><p><strong>Limit postmenopausal hormone therapy.</strong> Combination hormone therapy may increase the risk of breast cancer. 
+                    Talk with your doctor about the benefits and risks of hormone therapy.</p>
+                    <p>Some women experience bothersome signs and symptoms during menopause and, for these women, 
+                        the increased risk of breast cancer may be acceptable in order to relieve menopause signs and symptoms.</p>
+                    <p>To reduce the risk of breast cancer, use the lowest dose of hormone therapy possible for the shortest amount of time.</p></li>
+                <li><strong>Maintain a healthy weight.</strong> If your weight is healthy, work to maintain that weight. If you need to lose weight, ask your 
+                    doctor about healthy strategies to accomplish this. Reduce the number of calories you eat each day and slowly increase the amount of exercise.</li>
+                <li><strong>Choose a healthy diet.</strong> Women who eat a Mediterranean diet supplemented with extra-virgin olive oil and mixed nuts may have a 
+                    reduced risk of breast cancer. The Mediterranean diet focuses mostly on plant-based foods, such as fruits and vegetables, whole grains, 
+                    legumes, and nuts. People who follow the Mediterranean diet choose healthy fats, such as olive oil, over butter and fish instead of red meat.</li>
+            </ul>
+
+            <h3>Breast cancer risk reduction for women with a high risk</h3>
+            <li>If your doctor has assessed your family history and determined that you have other factors, such as a precancerous breast condition, 
+                that increase your risk of breast cancer, you may discuss options to reduce your risk, such as:</li>
+            <ul><li><strong>Preventive medications (chemoprevention).</strong> Estrogen-blocking medications, such as selective estrogen receptor 
+                modulators and aromatase inhibitors, reduce the risk of breast cancer in women with a high risk of the disease.These medications carry a 
+                risk of side effects, so doctors reserve these medications for women who have a very high risk of breast cancer. 
+                Discuss the benefits and risks with your doctor.</li>
+                <li><strong>Preventive surgery.</strong> Women with a very high risk of breast cancer may choose to have their healthy breasts surgically 
+                    removed (prophylactic mastectomy). They may also choose to have their healthy ovaries removed (prophylactic oophorectomy) 
+                    to reduce the risk of both breast cancer and ovarian cancer.</li></ul>
+        </div>
+
+        <div>
+            <h2>Is breast cancer painful?</h2>
+            <p>A lump or a mass in the breast is oftenTrusted Source one of the first signs of breast cancer. In many cases, these lumps are painless. A person may experience pain in the nipple or breast area that appears to be tied to their menstrual cycle.
+
+                Pain caused by breast cancer is typically gradual. Anyone who experiences breast pain, especially if it is severe or persistent, 
+                should consult a healthcare professional.</p>
+        </div>
+
+        <div>
+            <h2>When to see a doctor</h2>
+            <p>If you find a lump or other change in your breast — even if a recent mammogram was normal — make an appointment with your doctor for prompt evaluation.</p>
+        </div>
+    </section>
+
+
+  </body>
+</html>
